@@ -1,7 +1,7 @@
 #!/bin/bash
 # config de code serveur pour l'ada
 sudo apt install gnat -y
-cp p_esiut.ad* /usr/lib/gcc/x86_64-linux-gnu/8/adainclude/ 
+sudo p p_esiut.ad* /usr/lib/gcc/x86_64-linux-gnu/8/adainclude/ 
 
 curl -fsSL https://code-server.dev/install.sh | sh
 
