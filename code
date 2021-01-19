@@ -1,10 +1,10 @@
 #!/bin/bash
 # config de code serveur pour l'ada
 sudo apt install gnat -y
-sudo p p_esiut.ad* /usr/lib/gcc/x86_64-linux-gnu/8/adainclude/ 
+sudo cp p_esiut.ad* /usr/lib/gcc/x86_64-linux-gnu/8/adainclude/ 
 
 curl -fsSL https://code-server.dev/install.sh | sh
-
+cat ~/.config/code-server/config.yaml
 
 
 $ali="alias mada='gnatmake -gnatv -gnato'"
