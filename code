@@ -4,7 +4,8 @@ sudo apt install gnat -y
 sudo cp p_esiut.ad* /usr/lib/gcc/x86_64-linux-gnu/8/adainclude/ # install package iut
 
 # user settings 
-mkdir ~/.config/Code/User/
+mkdir ~/.config/Code/
+mkdir ~/.config/Code/User
 sudo cp settings.json ~/.config/Code/User/
 sudo cp -r snippets ~.config/Code/User/snippets
 
