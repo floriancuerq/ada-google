@@ -4,10 +4,10 @@ sudo apt install gnat -y
 sudo cp p_esiut.ad* /usr/lib/gcc/x86_64-linux-gnu/8/adainclude/ # install package iut
 
 # user settings 
-mkdir ~/.config/Code/
-mkdir ~/.config/Code/User
-sudo cp settings.json ~/.config/Code/User/
-sudo cp -r snippets ~.config/Code/User/snippets
+mkdir ~/.local/share/code-server/
+mkdir ~/.local/share/code-server/User
+sudo cp settings.json ~/.local/share/code-server/User/
+sudo cp -r snippets ~/.local/share/code-server/User/
 
 curl -fsSL https://code-server.dev/install.sh | sh
 cat ~/.config/code-server/config.yaml
