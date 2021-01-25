@@ -1,7 +1,12 @@
 #!/bin/bash
 # config de code serveur pour l'ada
 sudo apt install gnat -y
-sudo cp p_esiut.ad* /usr/lib/gcc/x86_64-linux-gnu/8/adainclude/ 
+sudo cp p_esiut.ad* /usr/lib/gcc/x86_64-linux-gnu/8/adainclude/ # install package iut
+
+# user settings 
+mkdir ~/.config/Code/User/
+sudo cp settings.json ~/.config/Code/User/
+sudo cp -r snippets ~.config/Code/User/snippets
 
 curl -fsSL https://code-server.dev/install.sh | sh
 cat ~/.config/code-server/config.yaml
