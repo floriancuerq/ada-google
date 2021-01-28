@@ -18,6 +18,6 @@ alias mada="gnatmake -gnatv -gnato"
 alias cada="gnatgcc -c -gnatv -gnato"
 source ~/.bashrc
 
-
+code-server --install-extension ada_extension.vsix
 code-server
 
