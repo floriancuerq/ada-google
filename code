@@ -13,9 +13,9 @@ curl -fsSL https://code-server.dev/install.sh | sh
 cat ~/.config/code-server/config.yaml
 
 
-alias mada="gnatmake -gnatv -gnato">> ~/.bash_aliases
+echo "alias mada='gnatmake -gnatv -gnato'">> ~/.bash_aliases
 
-alias cada="gnatgcc -c -gnatv -gnato">> ~/.bash_aliases
+echo "alias cada='gnatgcc -c -gnatv -gnato'">> ~/.bash_aliases
 source ~/.bashrc
 
 code-server --install-extension ada_extension.vsix
