@@ -6,7 +6,7 @@
 
 2. Lancer le cloud shell  ![connexion](./asset-readme/connexion.gif)
 
-3.  Taper ces commandes ```bash
+3.  Taper ces commandes ```
    git clone https://github.com/floriancuerq/ada-google.git 
    cd ada-google
    chmod +x code ```
