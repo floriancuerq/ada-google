@@ -13,10 +13,9 @@ curl -fsSL https://code-server.dev/install.sh | sh
 cat ~/.config/code-server/config.yaml
 
 
-$var="alias mada='gnatmake -gnatv -gnato'"
-echo $var >> ~/.bash_aliases
-$var="alias cada='gnatgcc -c -gnatv -gnato'"
-echo $var >> ~/.bash_aliases
+alias mada="gnatmake -gnatv -gnato"
+
+alias cada="gnatgcc -c -gnatv -gnato"
 source ~/.bashrc
 
 
