@@ -18,6 +18,6 @@ Lancer le script avec comme argument votre adresse mail associé à votre compte
 ./code test@exemple.com
 ```
 
-Copier la clé ssh donné dans le script  à l'endroit approprié (plus d'information [ici](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account))
+Copier la clé ssh donné dans le script  à l'endroit approprié (plus d'informations [ici](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account))
 
 Enfin ouvrir la "web preview" pour accéder à vs code.
