@@ -18,7 +18,7 @@ echo "alias mada='gnatmake -gnatv -gnato'">> ~/.bash_aliases
 echo "alias cada='gnatgcc -c -gnatv -gnato'">> ~/.bash_aliases
 source ~/.bashrc
 
-FILE=~./ssh/*.pub
+FILE=~/.ssh/*.pub
 if [ -f "$FILE" ]; then
     echo "$FILE exists."
     cat $FILE
