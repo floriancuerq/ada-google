@@ -18,13 +18,14 @@ echo "alias mada='gnatmake -gnatv -gnato'">> ~/.bash_aliases
 echo "alias cada='gnatgcc -c -gnatv -gnato'">> ~/.bash_aliases
 source ~/.bashrc
 
-FILE=~/.ssh/*.pub
+FILE=~/.ssh/id_ed25519.pub
 if [ -f "$FILE" ]; then
     echo "$FILE exists."
     cat $FILE
 else 
     echo "$FILE does not exist."
     ssh-keygen -t ed25519 -C $1
+    cp ~/.ssh/id_ed25519.pub .
 fi
 
 # installation de l extension ada
