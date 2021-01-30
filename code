@@ -21,14 +21,18 @@ source ~/.bashrc
 FILE=~/.ssh/id_ed25519.pub
 if [ -f "$FILE" ]; then
     echo "$FILE exists."
-    cat $FILE
+
 else 
     echo "$FILE does not exist."
     ssh-keygen -t ed25519 -C $1
-    cp ~/.ssh/id_ed25519.pub .
-    cat id_ed25519.pub # affichage de la cle ssh 
-
 fi
+# affichage de la cle ssh
+echo "-------------------------------------------------------"
+echo "-------------------------------------------------------"
+echo " SSH KEY"
+cat $FILE
+echo "-------------------------------------------------------"
+echo "-------------------------------------------------------"
 
 # installation de l extension ada
 code-server --install-extension ada_extension.vsix
