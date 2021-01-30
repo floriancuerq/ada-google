@@ -9,15 +9,27 @@ mkdir ~/.local/share/code-server/User
 sudo cp settings.json ~/.local/share/code-server/User/
 sudo cp -r snippets ~/.local/share/code-server/User/
 
+# installation de code serveur
 curl -fsSL https://code-server.dev/install.sh | sh
 cat ~/.config/code-server/config.yaml
 
-
+# ajout des alias pour l ada
 echo "alias mada='gnatmake -gnatv -gnato'">> ~/.bash_aliases
-
 echo "alias cada='gnatgcc -c -gnatv -gnato'">> ~/.bash_aliases
 source ~/.bashrc
 
+FILE=~./ssh/*.pub
+if [ -f "$FILE" ]; then
+    echo "$FILE exists."
+    cat $FILE
+else 
+    echo "$FILE does not exist."
+    ssh-keygen -t ed25519 -C $1
+fi
+
+# installation de l extension ada
 code-server --install-extension ada_extension.vsix
+
+# lancement de code server
 code-server
 
