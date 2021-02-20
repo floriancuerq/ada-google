@@ -3,4 +3,6 @@ env_values:
  settings_file: settings.json
  alias_file: alias_file.txt
  install_code: true
+ snippets: snippets/ada.json
+ extensions: AlessandroDelSole.ada esbenp.prettier-vscode
  
