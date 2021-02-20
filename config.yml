@@ -4,5 +4,5 @@ env_values:
  alias_file: alias_file.txt
  install_code: true
  snippets: snippets/ada.json
- extensions: AlessandroDelSole.ada esbenp.prettier-vscode
+ extensions: hediet.vscode-drawio esbenp.prettier-vscode
  

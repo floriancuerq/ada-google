@@ -10,7 +10,7 @@ arr=("${arr[@]:1}") #removed the 1st element(header of the section)
 for item in "${arr[@]}"
 do 
     echo "Installing $item"
-    sudo apt install $item 
+    sudo apt install $item -y
 done
 
 # move the settings file to the appropriate location
