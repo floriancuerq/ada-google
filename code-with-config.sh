@@ -15,9 +15,9 @@ done
 
 # move the settings file to the appropriate location
 arr=($(cat $config_file | grep "settings_file"))
-#TODO remove comment before pushing
+
 mkdir ~/.local/share/code-server/
-mkdir ~/.local/share/code-server/User
+mkdir -p ~/.local/share/code-server/User/
 
 sudo cp ${arr[1]} ~/.local/share/code-server/User/
 
