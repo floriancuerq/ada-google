@@ -1,0 +1,2 @@
+alias mada='gnatmake -gnatv -gnato'
+alias cada='gnatgcc -c -gnatv -gnato'

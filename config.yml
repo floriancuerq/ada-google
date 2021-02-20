@@ -1,0 +1,6 @@
+env_values:
+ packages: gnat 
+ settings_file: settings.json
+ alias_file: alias_file.txt
+ install_code: true
+ 
