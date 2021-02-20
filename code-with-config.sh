@@ -38,7 +38,7 @@ answer=${arr[1]}
 if $answer 
 then
     curl -fsSL https://code-server.dev/install.sh | sh
-    cat ~/.config/code-server/config.yaml
+    
 else
     echo "not installing code-server"
 fi
@@ -62,7 +62,16 @@ for item in "${arr[@]}"
 do 
     echo "Installing $item"
     code-server --install-extension $item
-    #TODO remove comment before pushing
+    
 done
+# showing password if code-server was installed by the script
+if $answer
+then
+    arr=($(cat  "~/.config/code-server/config.yaml"| grep "password:"))
+    echo "************************************"
+    echo "password is ${arr[1]}"
+    echo "************************************"
+fi
 
+# launch code-server
 code-server
