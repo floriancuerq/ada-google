@@ -41,3 +41,6 @@ if $answer; then
 else
     echo "no installing code-server"
 fi
+
+
+code-server
