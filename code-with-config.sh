@@ -67,7 +67,7 @@ done
 # showing password if code-server was installed by the script
 if $answer
 then
-    arr=($(cat  "~/.config/code-server/config.yaml"| grep "password:"))
+    arr=($(cat  ~/.config/code-server/config.yaml| grep "password:"))
     echo "************************************"
     echo "password is ${arr[1]}"
     echo "************************************"
